@@ -1,4 +1,4 @@
-module github.com/minio/minio-go/v7
+module github.com/reedchan7/minio-go-sdk/v7
 
 go 1.17
 
