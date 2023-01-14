@@ -1,4 +1,4 @@
-module github.com/minio/minio-go/examples/minio
+module github.com/reedchan7/minio-go-sdk/examples/minio
 
 go 1.14
 
@@ -17,4 +17,4 @@ require (
 	gopkg.in/ini.v1 v1.66.6 // indirect
 )
 
-replace github.com/minio/minio-go/v7 v7.0.10 => ../..
+replace github.com/reedchan7/minio-go-sdk/v7 v7.0.10 => ../..

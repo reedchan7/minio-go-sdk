@@ -1,4 +1,4 @@
-# MinIO Go Client SDK for Amazon S3 Compatible Cloud Storage [![Slack](https://slack.min.io/slack?type=svg)](https://slack.min.io) [![Sourcegraph](https://sourcegraph.com/github.com/minio/minio-go/-/badge.svg)](https://sourcegraph.com/github.com/minio/minio-go?badge) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/minio/minio-go/blob/master/LICENSE)
+# MinIO Go Client SDK for Amazon S3 Compatible Cloud Storage [![Slack](https://slack.min.io/slack?type=svg)](https://slack.min.io) [![Sourcegraph](https://sourcegraph.com/github.com/reedchan7/minio-go-sdk/-/badge.svg)](https://sourcegraph.com/github.com/reedchan7/minio-go-sdk?badge) [![Apache V2 License](https://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/reedchan7/minio-go-sdk/blob/master/LICENSE)
 
 The MinIO Go Client SDK provides simple APIs to access any Amazon S3 compatible object storage.
 
@@ -8,7 +8,7 @@ This document assumes that you have a working [Go development environment](https
 
 ## Download from Github
 ```sh
-go get github.com/minio/minio-go/v7
+go get github.com/reedchan7/minio-go-sdk/v7
 ```
 
 ## Initialize MinIO Client
@@ -25,8 +25,8 @@ package main
 import (
 	"log"
 
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/reedchan7/minio-go-sdk/v7"
+	"github.com/reedchan7/minio-go-sdk/v7/pkg/credentials"
 )
 
 func main() {
@@ -61,8 +61,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/reedchan7/minio-go-sdk/v7"
+	"github.com/reedchan7/minio-go-sdk/v7/pkg/credentials"
 )
 
 func main() {
@@ -177,70 +177,70 @@ The full API Reference is available here.
 ## Full Examples
 
 ### Full Examples : Bucket Operations
-* [makebucket.go](https://github.com/minio/minio-go/blob/master/examples/s3/makebucket.go)
-* [listbuckets.go](https://github.com/minio/minio-go/blob/master/examples/s3/listbuckets.go)
-* [bucketexists.go](https://github.com/minio/minio-go/blob/master/examples/s3/bucketexists.go)
-* [removebucket.go](https://github.com/minio/minio-go/blob/master/examples/s3/removebucket.go)
-* [listobjects.go](https://github.com/minio/minio-go/blob/master/examples/s3/listobjects.go)
-* [listobjectsV2.go](https://github.com/minio/minio-go/blob/master/examples/s3/listobjectsV2.go)
-* [listincompleteuploads.go](https://github.com/minio/minio-go/blob/master/examples/s3/listincompleteuploads.go)
+* [makebucket.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/makebucket.go)
+* [listbuckets.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/listbuckets.go)
+* [bucketexists.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/bucketexists.go)
+* [removebucket.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/removebucket.go)
+* [listobjects.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/listobjects.go)
+* [listobjectsV2.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/listobjectsV2.go)
+* [listincompleteuploads.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/listincompleteuploads.go)
 
 ### Full Examples : Bucket policy Operations
-* [setbucketpolicy.go](https://github.com/minio/minio-go/blob/master/examples/s3/setbucketpolicy.go)
-* [getbucketpolicy.go](https://github.com/minio/minio-go/blob/master/examples/s3/getbucketpolicy.go)
-* [listbucketpolicies.go](https://github.com/minio/minio-go/blob/master/examples/s3/listbucketpolicies.go)
+* [setbucketpolicy.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/setbucketpolicy.go)
+* [getbucketpolicy.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/getbucketpolicy.go)
+* [listbucketpolicies.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/listbucketpolicies.go)
 
 ### Full Examples : Bucket lifecycle Operations
-* [setbucketlifecycle.go](https://github.com/minio/minio-go/blob/master/examples/s3/setbucketlifecycle.go)
-* [getbucketlifecycle.go](https://github.com/minio/minio-go/blob/master/examples/s3/getbucketlifecycle.go)
+* [setbucketlifecycle.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/setbucketlifecycle.go)
+* [getbucketlifecycle.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/getbucketlifecycle.go)
 
 ### Full Examples : Bucket encryption Operations
-* [setbucketencryption.go](https://github.com/minio/minio-go/blob/master/examples/s3/setbucketencryption.go)
-* [getbucketencryption.go](https://github.com/minio/minio-go/blob/master/examples/s3/getbucketencryption.go)
-* [deletebucketencryption.go](https://github.com/minio/minio-go/blob/master/examples/s3/deletebucketencryption.go)
+* [setbucketencryption.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/setbucketencryption.go)
+* [getbucketencryption.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/getbucketencryption.go)
+* [deletebucketencryption.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/deletebucketencryption.go)
 
 ### Full Examples : Bucket replication Operations
-* [setbucketreplication.go](https://github.com/minio/minio-go/blob/master/examples/s3/setbucketreplication.go)
-* [getbucketreplication.go](https://github.com/minio/minio-go/blob/master/examples/s3/getbucketreplication.go)
-* [removebucketreplication.go](https://github.com/minio/minio-go/blob/master/examples/s3/removebucketreplication.go)
+* [setbucketreplication.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/setbucketreplication.go)
+* [getbucketreplication.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/getbucketreplication.go)
+* [removebucketreplication.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/removebucketreplication.go)
 
 ### Full Examples : Bucket notification Operations
-* [setbucketnotification.go](https://github.com/minio/minio-go/blob/master/examples/s3/setbucketnotification.go)
-* [getbucketnotification.go](https://github.com/minio/minio-go/blob/master/examples/s3/getbucketnotification.go)
-* [removeallbucketnotification.go](https://github.com/minio/minio-go/blob/master/examples/s3/removeallbucketnotification.go)
-* [listenbucketnotification.go](https://github.com/minio/minio-go/blob/master/examples/minio/listenbucketnotification.go) (MinIO Extension)
-* [listennotification.go](https://github.com/minio/minio-go/blob/master/examples/minio/listen-notification.go) (MinIO Extension)
+* [setbucketnotification.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/setbucketnotification.go)
+* [getbucketnotification.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/getbucketnotification.go)
+* [removeallbucketnotification.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/removeallbucketnotification.go)
+* [listenbucketnotification.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/minio/listenbucketnotification.go) (MinIO Extension)
+* [listennotification.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/minio/listen-notification.go) (MinIO Extension)
 
 ### Full Examples : File Object Operations
-* [fputobject.go](https://github.com/minio/minio-go/blob/master/examples/s3/fputobject.go)
-* [fgetobject.go](https://github.com/minio/minio-go/blob/master/examples/s3/fgetobject.go)
+* [fputobject.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/fputobject.go)
+* [fgetobject.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/fgetobject.go)
 
 ### Full Examples : Object Operations
-* [putobject.go](https://github.com/minio/minio-go/blob/master/examples/s3/putobject.go)
-* [getobject.go](https://github.com/minio/minio-go/blob/master/examples/s3/getobject.go)
-* [statobject.go](https://github.com/minio/minio-go/blob/master/examples/s3/statobject.go)
-* [copyobject.go](https://github.com/minio/minio-go/blob/master/examples/s3/copyobject.go)
-* [removeobject.go](https://github.com/minio/minio-go/blob/master/examples/s3/removeobject.go)
-* [removeincompleteupload.go](https://github.com/minio/minio-go/blob/master/examples/s3/removeincompleteupload.go)
-* [removeobjects.go](https://github.com/minio/minio-go/blob/master/examples/s3/removeobjects.go)
+* [putobject.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/putobject.go)
+* [getobject.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/getobject.go)
+* [statobject.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/statobject.go)
+* [copyobject.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/copyobject.go)
+* [removeobject.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/removeobject.go)
+* [removeincompleteupload.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/removeincompleteupload.go)
+* [removeobjects.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/removeobjects.go)
 
 ### Full Examples : Encrypted Object Operations
-* [put-encrypted-object.go](https://github.com/minio/minio-go/blob/master/examples/s3/put-encrypted-object.go)
-* [get-encrypted-object.go](https://github.com/minio/minio-go/blob/master/examples/s3/get-encrypted-object.go)
-* [fput-encrypted-object.go](https://github.com/minio/minio-go/blob/master/examples/s3/fputencrypted-object.go)
+* [put-encrypted-object.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/put-encrypted-object.go)
+* [get-encrypted-object.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/get-encrypted-object.go)
+* [fput-encrypted-object.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/fputencrypted-object.go)
 
 ### Full Examples : Presigned Operations
-* [presignedgetobject.go](https://github.com/minio/minio-go/blob/master/examples/s3/presignedgetobject.go)
-* [presignedputobject.go](https://github.com/minio/minio-go/blob/master/examples/s3/presignedputobject.go)
-* [presignedheadobject.go](https://github.com/minio/minio-go/blob/master/examples/s3/presignedheadobject.go)
-* [presignedpostpolicy.go](https://github.com/minio/minio-go/blob/master/examples/s3/presignedpostpolicy.go)
+* [presignedgetobject.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/presignedgetobject.go)
+* [presignedputobject.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/presignedputobject.go)
+* [presignedheadobject.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/presignedheadobject.go)
+* [presignedpostpolicy.go](https://github.com/reedchan7/minio-go-sdk/blob/master/examples/s3/presignedpostpolicy.go)
 
 ## Explore Further
 * [Complete Documentation](https://min.io/docs/minio/kubernetes/upstream/index.html)
 * [MinIO Go Client SDK API Reference](https://min.io/docs/minio/linux/developers/go/API.html)
 
 ## Contribute
-[Contributors Guide](https://github.com/minio/minio-go/blob/master/CONTRIBUTING.md)
+[Contributors Guide](https://github.com/reedchan7/minio-go-sdk/blob/master/CONTRIBUTING.md)
 
 ## License
-This SDK is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](https://github.com/minio/minio-go/blob/master/LICENSE) and [NOTICE](https://github.com/minio/minio-go/blob/master/NOTICE) for more information.
+This SDK is distributed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](https://github.com/reedchan7/minio-go-sdk/blob/master/LICENSE) and [NOTICE](https://github.com/reedchan7/minio-go-sdk/blob/master/NOTICE) for more information.
