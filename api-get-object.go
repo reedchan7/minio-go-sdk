@@ -23,8 +23,6 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"net/url"
-	"strconv"
 	"sync"
 
 	"github.com/minio/minio-go/v7/pkg/s3utils"
@@ -640,7 +638,7 @@ func newObject(ctx context.Context, cancel context.CancelFunc, reqCh chan<- getR
 
 // getObject - retrieve object from Object Storage.
 //
-// Additionally this function also takes range arguments to download the specified
+// Additionally, this function also takes range arguments to download the specified
 // range bytes of an object. Setting offset and length = 0 will download the full object.
 //
 // For more information about the HTTP Range header.
@@ -654,19 +652,11 @@ func (c *Client) getObject(ctx context.Context, bucketName, objectName string, o
 		return nil, ObjectInfo{}, nil, err
 	}
 
-	urlValues := make(url.Values)
-	if opts.VersionID != "" {
-		urlValues.Set("versionId", opts.VersionID)
-	}
-	if opts.PartNumber > 0 {
-		urlValues.Set("partNumber", strconv.Itoa(opts.PartNumber))
-	}
-
 	// Execute GET on objectName.
 	resp, err := c.executeMethod(ctx, http.MethodGet, requestMetadata{
 		bucketName:       bucketName,
 		objectName:       objectName,
-		queryValues:      urlValues,
+		queryValues:      opts.ToQueryValues(),
 		customHeader:     opts.Header(),
 		contentSHA256Hex: emptySHA256Hex,
 	})
